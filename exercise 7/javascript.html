@@ -11,14 +11,19 @@
         <button id="my-button">Click Me</button>
 
         <script>
+            // create a variable called "myButton" and connect it to "my-button"
             var myButton = document.querySelector('#my-button');
+            // create a varible called "nameInput" and connect it to "name-input"
             var nameInput = document.querySelector('#name-input');
 
+            // connect the variable myButton to the function "click"
             myButton.addEventListener('click', function () {
+                // as long as a user enter a value, the if statement will be true
                 if (nameInput.value !== '') {
+                    // output "hello " + whatever the user input
                     alert('Hello ' + nameInput.value);
                 }
-            });
+            }); // just like Java, every line of JavaScript code ends with a ";"
         </script>
         
     </body>
